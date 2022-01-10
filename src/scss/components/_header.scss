@@ -1,0 +1,47 @@
+.header {
+  &__container {
+    display: grid;
+    column-gap: 10px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 0 15px;
+    min-height: 85px;
+    max-width: 1350px + 30px;
+  }
+
+  &__auth {
+    display: grid;
+    column-gap: 12px;
+    justify-self: end;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.auth {
+  &__log-btn {
+    border: 1px solid #000;
+    padding: 11px 29px;
+    color: var(--color-bokara-grey);
+  }
+
+  &__sign-btn {
+    padding: 11px 16px;
+    color: #fff;
+    background-color: var(--color-blue-lagoon);
+  }
+}

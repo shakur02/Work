@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100%;
+    font-size: 16px;
+    color: var(--color-opaltone);
+  }
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.logo {
+  width: 186px;
+  height: 100%;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+// TEXT STYLES
+.main-title {
+  font-size: torem(74px);
+}
+
+.description {
+  font-size: torem(20px);
+}
+
+.prescription {
+  font-size: torem(14px);
+}
