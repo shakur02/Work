@@ -1,0 +1,23 @@
+.reviews {
+  margin-bottom: 100px;
+  padding-top: 72px;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1150px + 30px;
+  }
+
+  &__section-title {
+    text-align: center;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+
+  &-slide {
+    display: flex;
+  }
+}
