@@ -1,0 +1,46 @@
+.start-section {
+  display: flex;
+  align-items: center;
+  min-height: 577px;
+  background-color: var(--color-opaltone);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1150px + 30px;
+  }
+
+  &__text-wrapper {
+    max-width: 585px;
+    text-align: center;
+    color: var(--color-double-pearl-lusta);
+  }
+
+  &__title {
+    margin: 0 0 35px;
+    font-weight: 400;
+    font-size: torem(74px);
+    line-height: 74px;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    margin: 0 0 30px;
+    line-height: 28px;
+  }
+
+  &__btn {
+    margin: 0 0 20px;
+    padding: 20px 40px;
+    color: var(--color-opaltone);
+    background-color: var(--color-double-pearl-lusta);
+  }
+
+  &__prescription {
+    margin: 0 0 20px;
+    line-height: 21px;
+  }
+}

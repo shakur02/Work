@@ -1,0 +1,73 @@
+.inspiration {
+  padding-bottom: 120px;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px + 30px;
+  }
+
+  &__section-title {
+    text-align: center;
+  }
+
+  &__btn {
+    border: 1px solid #692340;
+    padding: 20px 40px;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 20px;
+    max-width: 1035px;
+
+    &__title {
+      font-size: torem(24px);
+      line-height: 26px;
+      text-align: center;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 217px;
+    }
+  }
+}
+
+.business-tips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+
+  &__item {
+    max-width: 385px;
+  }
+
+  &__category {
+    margin: 0;
+    font-weight: 700;
+    font-size: torem(24px);
+    line-height: 55px;
+  }
+
+  &__title {
+    margin: 0 0 13px;
+    font-weight: 700;
+    font-size: torem(27px);
+    line-height: 30px;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    font-size: torem(18px);
+    line-height: 29px;
+  }
+
+  &__image {
+    margin: 0 0 8px;
+  }
+}

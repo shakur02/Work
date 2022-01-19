@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 100px;
+  margin-bottom: 72px;
   padding-top: 72px;
 
   &__container {
@@ -14,10 +14,57 @@
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  padding: 0 50px;
+  height: 725px;
+  max-width: 1035px;
+
+  &-container {
+    position: relative;
+    padding: 0 55px;
+  }
+
+  &-button {
+    &-prev {
+      left: 0;
+      color: var(--color-opaltone);
+    }
+
+    &-next {
+      right: 0;
+      color: var(--color-opaltone);
+    }
+  }
+
+  &-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
   &-slide {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 350px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+      padding-bottom: 30px;
+      height: 100%;
+    }
+  }
+
+  &-pagination-bullet-active {
+    background-color: var(--color-opaltone);
+  }
+
+  &__image {
+    width: 456px;
   }
 }
