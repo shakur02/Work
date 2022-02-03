@@ -2,6 +2,7 @@
   min-height: 764px;
   background-image: url(../../img/hero__background.png);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 
   &__container {
@@ -37,6 +38,7 @@
 
   &__prescription {
     margin: 0;
+    padding-bottom: 20px;
     line-height: 21px;
   }
 }

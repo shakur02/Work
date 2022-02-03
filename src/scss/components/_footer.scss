@@ -13,7 +13,7 @@
   &__top {
     display: grid;
     grid-template-columns: minmax(auto, 810px) 185px;
-    margin: 0 0 73px;
+    margin: 0 0 130px;
     gap: 60px;
   }
 
@@ -26,7 +26,14 @@
   }
 
   &__links {
+    &-list {
+      margin-bottom: 20px;
+    }
+
     &-link {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
       color: var(--color-bokara-grey);
     }
 
@@ -35,15 +42,6 @@
         margin: 0 0 13px;
       }
     }
-  }
-
-  &__link {
-    color: var(--color-bokara-grey);
-  }
-
-  &__links-list {
-    display: flex;
-    flex-direction: column;
   }
 
   &__services {
@@ -65,13 +63,38 @@
     margin: 0 0 13px;
   }
 
+  &__store {
+    &-image {
+      max-width: 99px;
+    }
+  }
+
   &__bottom {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 80px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      right: -500%;
+      top: -50px;
+      display: block;
+      width: 1000%;
+      height: 1px;
+      background: var(--color-grey);
+    }
+
+    &-btn {
+      border: 1px solid #241c15;
+      padding: 9px;
+    }
+
     &-text-wrapper {
-      max-width: 290px;
+      max-width: 300px;
+      font-size: 10px;
     }
   }
 
@@ -89,6 +112,12 @@
     &-image {
       width: 20px;
       height: 20px;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
     }
   }
 }
